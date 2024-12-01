@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  h4 {
+   color: #12ac8e;
+   display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .encabezado__form h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+  body, html {
+    scroll-behavior: smooth;
+  }
+  .background-contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura visible */
+    overflow: hidden;
+  }
+  .background-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  .nav__contenedor .btn {
+    margin-left: 20%; /* Esto mueve el botón hacia la derecha */
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 172, 142, 0.8); /* Verde aguamarino claro y poco transparente */
+  justify-content: center;
+  text-align: right;
+  padding: 0 90px;
+  --primary-color: #12ac8e;
+  --primary-color-dark: #0d846c;
+  --primary-color-light: #e9f7f7;
+  --secondary-color: #fb923c;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+.secciones__contenedor {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  text-align: left;
+  --text-light: #767268;
+
+}
+
+.nav__contenedor {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-right: auto;
+  
+}
+
+.nav__logo span {
+  color: var(--secondary-color);
+}
+
+.nav__gokus {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.goku a {
+  color: var(--primary-color-light);
+  text-decoration: none;
+}
+
+.goku a:hover {
+  color: var(--white);
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.encabezado__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.encabezado__contenedor h1 {
+  margin-bottom: 1rem;
+  max-width: 800px;
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.encabezado__contenedor p {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: var(--primary-color-light);
+}
+
+.encabezado__form {
+  width: 100%;
+  max-width: 350px;
+}
+
+
+.encabezado__form form {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado__form input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  border-radius: 5px;
+}
+
+.encabezado__form input::placeholder {
+  color: var(--primary-color);
+}
+
+.form__btn {
+  background-color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.form__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.encabezado__contenedor.column {
+  flex-direction: column;
+}
+
+/*-------------------our special service----------------------------------*/
+
+
+.secciones__encabezado {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.service__encabezado__contenido p {
+  max-width: 600px;
+  color: var(--text-light);
+}
+
+.service__btn {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service__btn:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service__card {
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service__card p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.service__card a {
+  color: var(--primary-color);
+}
+
+.service__card a:hover {
+  color: var(--primary-color-dark);
+}
+
+.service__card:hover span {
+  color: var(--primary-color-light);
+  background-color: var(--primary-color);
+}
+
+/*-------------------about us----------------------------------*/
+.about__contenedor {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about__contenido {
+  max-width: 600px;
+  --text-light: #767268;
+}
+
+.about__contenido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var#333333;
+}
+.why__contenido p {
+    color: var(--text-light);
+}
+.about__contenido p {
+  margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.about__image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+:root {
+  --primary-color: #12ac8e;
+  --primary-color-dark: #0d846c;
+  --primary-color-light: #e9f7f7;
+  --secondary-color: #fb923c;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: var(--font-size);
+}
+/*-------------------pages----------------------------------*/
+.doctors__contenedor {
+  padding: 5rem 1rem;
+}
+
+.doctors__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctors__header__content h2 {
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.doctors__header__content p {
+  color: var(--text-light);
+  max-width: 600px;
+}
+
+.doctors__nav span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  color: #12ac8e;
+}
+
+.doctors__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.doctors__card {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.doctors__card__image {
+  position: relative;
+}
+
+.doctors__card__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.doctors__socials {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.doctors__card__image:hover .doctors__socials {
+  opacity: 1;
+}
+
+.doctors__socials span {
+    background-color: var(--white); /* Establece el color de fondo del botón utilizando una variable personalizada. */
+    color: var(--text-light); /* Define el color del texto dentro del botón como blanco. */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente del texto a 1rem (tamaño relativo al tamaño de la raíz). */
+    padding: 0.7rem; /* Añade espacio interno (padding) alrededor del contenido del botón. */
+    border-radius: 20%; /* Hace que los bordes del botón sean completamente redondeados, creando un círculo. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clickeable. */
+    transition: background-color 0.5s; /* Aplica una transición suave de 0.3 segundos al color de fondo cuando cambia. */
+  }
+
+.doctors__socials span:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.doctors__card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color-dark);
+  margin: 1rem 0 0.5rem;
+}
+
+.doctors__card p {
+  color: var(--text-light);
+}
+
+/*-------------------blog----------------------------------*/
+.blog__container {
+  text-align: center;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.blog {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.blog h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color-dark);
+}
+
+.blog p {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.why__grid {
+  margin-top: 4rem;
+  display: grid
+;
+  grid-template-columns: 80px auto;
+  gap: 2rem;
+}
+.why__grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.why__image img {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+/*---------------------------------BoTTOM----------------------------------*/
+.BOTTOM {
+  background-color: var(--primary-color-light);
+}
+
+.BOTTOM__contenedor {
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.BOTTOM__columna h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.BOTTOM__columna h3 span {
+  color: var(--secondary-color);
+}
+
+.BOTTOM__columna h4 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+.BOTTOM__columna p:hover {
+    color: var(--primary-color);
+}
+
+.BOTTOM__columna i {
+    color: var(--primary-color);
+}
+.BOTTOM__columna p {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BOTTOM__bar {
+  background-color: var(--primary-color);
+}
+
+.BOTTOM__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.BOTTOM__bar__content {
+  max-width: var(--max-width);
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.BOTTOM__bar__content p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
